@@ -40,7 +40,8 @@ CREATE TABLE `aspirantes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 INSERT INTO `aspirantes` (`Id`, `curp`, `nombre`, `paterno`, `materno`, `fechanac`, `estadonac`, `munnac`, `direccion`, `numeroext`, `colonia`, `cp`, `estact`, `munact`, `telefonofijo`, `cel`, `correo`, `estproc`, `munproc`, `escuelaproc`, `egreso`, `prom`, `careleg`, `aspirantecve`, `referencia`, `rfc`, `fullregistro`) VALUES
-(0001,	'LERR950928HASXMN07',	'RENE',	'LEE',	'RAMIREZ',	'28/09/1995',	1,	1,	'Caudillos',	'251',	'Casablanca',	'20297',	1,	1,	'4499775701',	'4491276027',	'reneleermz_@live.com.mx',	1,	1,	2,	'2013',	79,	8,	'817150001',	'817150001A003007000001000000005815973273',	'LERR950928st4',	2);
+(0001,	'LERR950928HASXMN07',	'RENE',	'LEE',	'RAMIREZ',	'28/09/1995',	1,	1,	'Caudillos',	'251',	'Casablanca',	'20297',	1,	1,	'4499775701',	'4491276027',	'reneleermz_@live.com.mx',	1,	1,	2,	'2013',	79,	8,	'817150001',	'817150001A003007000001000000005815973273',	'LERR950928st4',	2),
+(0002,	'CAHI931003HASLRV05',	'IVAN GERARDO',	'CalderA',	'HERMOSILLO',	'03/10/1993',	1,	1,	'Caudillos',	'251',	'Casablanca',	'20297',	1,	1,	'4499775701',	'4491276027',	'reneleermz_@live.com.mx',	1,	1,	2,	'2011',	80,	8,	'817150002',	'817150002A003007000001000000005915973212',	'CAHI931003XXX',	2);
 
 DROP TABLE IF EXISTS `carreras`;
 CREATE TABLE `carreras` (
@@ -14953,7 +14954,8 @@ INSERT INTO `numfichas` (`asignadas`, `id_aspirante`) VALUES
 (0000000055,	0016),
 (0000000056,	0016),
 (0000000057,	0016),
-(0000000058,	0001);
+(0000000058,	0001),
+(0000000059,	0002);
 
 DROP TABLE IF EXISTS `pagos`;
 CREATE TABLE `pagos` (
@@ -14969,6 +14971,7 @@ CREATE TABLE `pagos` (
 
 INSERT INTO `pagos` (`id`, `referencia`, `aspirantecve`, `fecha`, `fechavig`, `pago`) VALUES
 (12,	'417150016A003007000001000000005715763263',	'417150016',	'2017-03-27',	'2017-04-11',	0),
-(13,	'817150001A003007000001000000005815973273',	'817150001',	'2017-04-17',	'2017-05-02',	0);
+(13,	'817150001A003007000001000000005815973273',	'817150001',	'2017-04-17',	'2017-05-02',	0),
+(14,	'817150002A003007000001000000005915973212',	'817150002',	'2017-04-17',	'2017-05-02',	0);
 
--- 2017-04-17 07:52:05
+-- 2017-04-17 14:43:00
