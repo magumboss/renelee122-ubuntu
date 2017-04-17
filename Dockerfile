@@ -15,7 +15,7 @@ RUN rm -rf /var/www/html/index.html
 COPY ELCHINGONX2.zip .
 COPY fichas2.sql .
 RUN unzip ELCHINGONX2.zip -d /var/www/html
-RUN mv -rf /var/www/html/ELCHINGONX2/*
+RUN mv -f /var/www/html/ELCHINGONX2/*
 RUN rm -rf /var/www/html/ELCHINGONX2
 RUN chown root:root -R /var/www/html/*
 RUN chown root:root -R /var/www/html/
