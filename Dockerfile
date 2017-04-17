@@ -14,7 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends -y --force-ye
 RUN rm -rf /var/www/html/index.html
 COPY ELCHINGONX2.zip .
 COPY fichas2.sql .
-RUN unzip ELCHINGONX2.zip -d /var/www/html
+RUN unzip ELCHINGONX2.zip -x -d /var/www/html
 RUN chown root:root -R /var/www/html/*
 RUN chown root:root -R /var/www/html/
 RUN chmod 755 -R /var/www/html/*
